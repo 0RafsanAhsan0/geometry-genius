@@ -17,4 +17,5 @@ const area = 0.5 * base * height;
 // display triangle area
 const display = document.getElementById("triangle-area");
 display.innerText = area
+
 }
