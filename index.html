@@ -52,15 +52,19 @@
                         <p class="text-center">Area (A) = W X L</p>
 
                         <div>
-                            <input id="rectangle-width" class="w-24 text-2xl p-2 rounded bg-slate-100" type="text" placeholder="w">
+                            <input id="rectangle-width" class="w-24 text-2xl p-2 rounded bg-slate-100" type="text"
+                                placeholder="w">
                             <span class="ml-2 mr-2">cm</span>
-                            <input id="rectangle-length" class="w-24 text-2xl p-2 rounded bg-slate-100" type="text" placeholder="l">
+                            <input id="rectangle-length" class="w-24 text-2xl p-2 rounded bg-slate-100" type="text"
+                                placeholder="l">
                             <span class="ml-2 mr-2">cm</span>
                         </div>
+
                         <div>
-                            
+
                             <p class="text-2xl">Area: <span id="rectangle-area"></span> <span>cm<sup>2</sup></span></p>
                         </div>
+
                         <div class="card-actions">
                             <button onclick="claculaRectangleArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
@@ -71,16 +75,21 @@
                     <figure><img src="./images/parallelogram.png" alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="text-2xl font-semibold text-center">Parallelogram</h2>
-                        <p class="text-center">Area (A) = 0.5 X b X h</p>
+                        <p class="text-center">Area (A) = b X h</p>
 
                         <div>
-                            <input class="w-24 text-2xl p-2 rounded bg-slate-100" type="text" placeholder="b">
-                            <span class="ml-2 mr-4">cm</span>
-                            <input class="w-24 text-2xl p-2 rounded bg-slate-100" type="text" placeholder="h">
-                            <span class="ml-2 mr-4">cm</span>
+                            <input id="para-base" class="w-24 text-2xl p-2 rounded bg-slate-100" type="text" placeholder="b">
+                            <span class="ml-2 mr-2">cm</span>
+                            <input id="para-height" class="w-24 text-2xl p-2 rounded bg-slate-100" type="text" placeholder="h">
+                            <span class="ml-2 mr-2">cm</span>
                         </div>
+
+                        <div>
+                            <p class="text-2xl">Area: <span id="parallelogram-area"></span> <span>cm<sup>2</sup></span></p>
+                        </div>
+
                         <div class="card-actions">
-                            <button class="btn btn-primary w-full">Calculate</button>
+                            <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -149,6 +158,7 @@
     </main>
     <script src="./scripts/traingle.js"></script>
     <script src="./scripts/rectangle.js"></script>
+    <script src="./scripts/para.js"></script>
 </body>
 
 </html>
